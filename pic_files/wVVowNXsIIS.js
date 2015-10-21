@@ -1,0 +1,5 @@
+/*!CK:67888199!*//*1445222260,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["Kx8+1"]); }
+
+__d('FeedObjectInfoCapstone',['AdsPreferencesUiLogger','AsyncRequest','DOM','Event','Parent','XAdsPreferencesQuickEditHistoryController','csx','cx','ge','tidyEvent'],function a(b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q){if(c.__markCompiled)c.__markCompiled();var r={getInfoCapstone:function(s){var t=j.scry(s,"._2g9u");if(!t.length)t=j.scry(s.parentNode,"._2g9u");return t?t[0]:null;},initCloseButton:function(s,t,u){q(k.listen(s,'click',function(){if(u)h.logWithDataMap('hide_ad_prefs_quick_edit',u);j.remove(t);}));},addInfoCapstoneByStoryID:function(s,t,u){var v=l.byClass(p(s),"_5jmm");this.addInfoCapstone(v,t,u);},addInfoCapstone:function(s,t,u){var v=j.find(s,"._5v3q");if(v)s=v;this.removeInfoCapstone(s);if(t){j.prependContent(s,t);var w=m.getURIBuilder().setFBID('user_id',u).getURI(),x=new i(w);x.send();}return t;},removeInfoCapstone:function(s){var t=r.getInfoCapstone(s);if(t)j.remove(t);}};f.exports=r;},null);

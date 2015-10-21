@@ -1,0 +1,5 @@
+/*!CK:2003208207!*//*1440387187,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["RdEk1"]); }
+
+__d('ReactComposerImplicitLocationContainer.react',['ReactComposerImplicitLocationComponent.react','ReactComposerPropsAndStoreBasedStateMixin','ReactComposerTaggerActions','ReactComposerTaggerStore','ReactComposerTaggerType','AsyncRequest','URI','React'],function a(b,c,d,e,f,g,h,i,j,k,l,m,n,o){if(c.__markCompiled)c.__markCompiled();var p=o.createClass({displayName:'ReactComposerImplicitLocationContainer',mixins:[i(k)],statics:{calculateState:function(q,r){var s=k.getTaggerData(q,l.LOCATION)||{},t=s.implicitLocation||{};return {caption:t.citystring,hasExplicitLocation:!!s.place};}},render:function(){if(!this.state.caption)return o.createElement('noscript',null);return (o.createElement(h,babelHelpers._extends({},this.state,{onClear:this._onClear})));},_onClear:function(){var q=k.getTaggerData(this.context.composerID,l.LOCATION)||{};q.implicitLocation=null;j.setTaggerData(this.context.composerID,l.LOCATION,q);var r=new n('/ajax/places/toggle_location_sharing').addQueryData({disable:1,session_id:q.sessionID});new m(r).send();}});f.exports=p;},null);

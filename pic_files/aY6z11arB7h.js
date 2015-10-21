@@ -1,0 +1,5 @@
+/*!CK:2418274936!*//*1441685291,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["awk9O"]); }
+
+__d('ReactComposerStatusFooterContainer.react',['ReactComposerPropsAndStoreBasedStateMixin','ReactComposerStatusFooter.react','ReactComposerTaggerStore','ReactComposerTaggerType','React','ReactComponentWithPureRenderMixin'],function a(b,c,d,e,f,g,h,i,j,k,l,m){if(c.__markCompiled)c.__markCompiled();var n=l.createClass({displayName:'ReactComposerStatusFooterContainer',mixins:[m,h(j)],statics:{calculateState:function(o,p){var q=j.getTaggerData(o,k.LOCATION),r=q&&q.implicitLocation&&!!q.implicitLocation.citystring,s=q&&q.place&&q.place.getUniqueID();return {hasImplicitLocation:r,mediaLocation:q?q.mediaLocation:null,placeID:s};}},render:function(){return (l.createElement(i,babelHelpers._extends({},this.props,{hasImplicitLocation:this.state.hasImplicitLocation,mediaLocation:this.state.mediaLocation,placeID:this.state.placeID})));}});f.exports=n;},null);
